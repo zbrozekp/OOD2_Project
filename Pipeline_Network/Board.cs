@@ -9,6 +9,7 @@ namespace Pipeline_Network
     class Board
     {
         List<Component> theComponents;
+        List<Pipeline> thePipelines;
 
         public Board()
         {
@@ -42,5 +43,18 @@ namespace Pipeline_Network
         {
 
         }
+
+        public void addPipeline(Pipeline pipe)
+        {
+            Pipeline temp = new Pipeline();
+            this.thePipelines.Add(temp);
+        }
+
+        public void removePipeline(Pipeline pipe)
+        {
+            this.thePipelines.Remove(pipe);
+        }
+
+        //public Pipeline findPipeline()
     }
 }

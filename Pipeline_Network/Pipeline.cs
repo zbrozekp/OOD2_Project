@@ -25,21 +25,17 @@ namespace Pipeline_Network
             this.maxCapacity = initialMaxCapacity;
         }
 
-        public void addPipeline(Component con1, Component con2)
+        public void alterPipeline(double newMaxCapacity)
+        {
+            this.maxCapacity = newMaxCapacity;
+        }
+
+        public void addNeighbours(Component con1, Component con2)
         {
             this.connection1 = con1;
             this.connection2 = con2;
         }
 
-        public void removePipeline()
-        {
-            
-        }
-
-        public void alterPipeline(double newMaxCapacity)
-        {
-            this.maxCapacity = newMaxCapacity;
-        }
 
         public void updateFlow(double newCurrentFlow)
         {
